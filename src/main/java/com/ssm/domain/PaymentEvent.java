@@ -1,0 +1,5 @@
+package com.ssm.domain;
+
+public enum PaymentEvent {
+	PRE_AUTHORIZE,PRE_AUHTORIZE_APPROVED,PRE_AUTH_DECLINE,AUTHORIZE,APPROVED,AUTH_DECLINED
+}
