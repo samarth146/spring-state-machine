@@ -50,7 +50,8 @@ class PaymentServiceImplTest {
 	@Transactional
 	@Test
 	void testAuth() {
-		System.out.println("Inside testAuth method");
+		System.out.println("Inside testAuth method"
+				+ "");
 		Payment savedpayment = paymentService.newPayment(payment);
 		StateMachine<PaymentState,PaymentEvent> preAuthsm = paymentService.preAuth(savedpayment.getId());
 		
